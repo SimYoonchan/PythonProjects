@@ -7,7 +7,7 @@ number_of_computer_wins = 0
 
 
 #Instructions:
-print("Welcome to Yoonchan (Charlie) Sim's first Python Project - Rock, Paper, Scissors")
+print("Welcome to Yoonchan (Charlie) Sim's first Python Project (Game) - Rock, Paper, Scissors")
 print()
 print("\u0332".join("Instructions "))
     #I found this underline trick at: https://pysnakeblog.blogspot.com/2019/09/python-underline-string-python.html
