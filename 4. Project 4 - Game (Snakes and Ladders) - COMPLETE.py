@@ -1,10 +1,14 @@
 import random
-#import time
+import time
     #this will help make dice rolling more anticipatory
     #https://www.pythoncentral.io/pythons-time-sleep-pause-wait-sleep-stop-your-code/
 import sys
     #https://stackoverflow.com/questions/19782075/how-to-stop-terminate-a-python-script-from-running
 
+from PIL import Image
+image = Image.open('SnakesAndLaddersMap.png')
+image.show()
+    
 #VARIABLES:
 game_over = ['quit', 'q']
 dice_possibility = [1, 2, 3, 4, 5, 6]
@@ -71,7 +75,7 @@ while True:
 
         dice_roll = int(random.choice(dice_possibility))
         dice_roll_dict = {dice_roll}
-        # time.sleep(2)
+        time.sleep(2)
         print(input("{}, you rolled a {}".format(each_player, dice_roll)))
 
         tile_position_dict[each_player] = [sum(i) for i in zip(tile_position_dict[each_player], dice_roll_dict)]
